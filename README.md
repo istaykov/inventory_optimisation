@@ -51,8 +51,7 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 * **Main insight 2.** High-revenue products, particularly "Rain 200" from Women’s Coats, demonstrate the impact of high-margin items. These sales generated consistent revenues and profit margins without discounts, suggesting a valuable pricing model for premium items.
   
 * **Main insight 3.** Branch comparison reveals Barnes has a revenue advantage due to higher sales volume, though Haslemere has a 56.9% average profit margin.
-
-
+![Description of Image](./branch_analysis.jpg)
   
 
 
