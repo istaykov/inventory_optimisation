@@ -42,7 +42,7 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 
 
 # Insights Deep Dive
-### Category 1: Detailed Sales Metrics and Profitability Analysis
+### Detailed Sales Metrics and Profitability Analysis
 
 * **Transaction Volume and Unit Sales:**	The majority of sales transactions involve a single unit, with occasional sales involving 2 or 3 units. This suggests a high frequency of individual purchases.
   
@@ -58,18 +58,7 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 
 ![Description of Image](./data_distribution.png)
 
-* 
-* Most transactions involve single-unit sales, indicating a focus on lower-value, high-volume sales. The mean transaction revenue is around £76, with a standard deviation of £43.55. That means that about 68% of revenue is between £32.45 and £119.55, while around 95% of transaction revenue falls between £-11.10 and £163.10. In other words, most transactions fall within the £32.45 to £119.55 range.
-
-![Description of Image](./transactions.png)
-  
-* **Main insight 2.** High-revenue products, particularly "Rain 200" from Women’s Coats, demonstrate the impact of high-margin items. These sales generated consistent revenues and profit margins without discounts, suggesting a valuable pricing model for premium items.
-  
-* **Main insight 3.** Branch comparison reveals Barnes has a revenue advantage due to higher sales volume, though Haslemere has a 56.9% average profit margin.
-![Description of Image](./branch_analysis.jpg)
-  
-
-### Category 2: Profit Margin Insights Across Product Lines
+### Profit Margin Insights Across Product Lines
 
 * **Top-Performing Products.** The most profitable products include "Elly Tennis," "Cheerful," "Anna Femo," "Ter Linen," "Numis," "Konsa," "Birthe," and "Nebula," with profit margins ranging from 72.7% to 81.1%. These products, mainly in the women's footwear category (especially sandals and sneakers), highlight a strong market position and effective pricing strategy within this segment.
   
@@ -84,26 +73,26 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 ![Description of Image](./top_bottom_10_products.jpg)
 
 
-### Category 3: Inventory Optimization
+### Profitability Challenges and Strategic Insights
 
-* **Main insight 1.** Seasonal footwear, especially boots and sneakers, performs well, with stockouts and overstock managed carefully around seasonal demand, though late/early deliveries create issues in cash flow.
+* **Negative Discounts** There are 6,621 transactions with negative discounts, averaging -£34.59 per transaction. This significant amount indicates a potential issue with discounting practices. The majority of these discounts range between £-10 and £-55, suggesting a trend that may require review to ensure discounting aligns with profitability goals.
   
-* **Main insight 2.** Categories like Women’s Sandals and Slippers exhibit profitability variability, with underperforming products often affected by overstock or low demand.
+* **Negative Gross Profit** 379 transactions show negative gross profit, with an average loss of -£6.21 per transaction. The largest recorded loss in a single transaction is -£53.48. These results indicate instances where sales fail to cover costs, typically resulting in small losses ranging from £-10 to £-30. Addressing these patterns could prevent frequent losses at the transaction level.
   
-* **Main insight 3.** Optimal pricing and inventory planning for key items (e.g., “18 Cheerful” sandals) may reduce excess inventory and improve cash flow.
+* **Negative Profit Margins** Profit margins average -0.25%, which, although it may appear minor, could have significant impacts depending on sales volume. Margins range from -9.87% to 0.000436%, indicating variability in product or transaction performance. Addressing these variations can help in achieving a healthier overall profit margin.
 
-[Visualization specific to category 3]
+![Description of Image](./negative_values.jpg)
 
 
-### Category 4: Seasonal and Demand Analysis
+### Category-Level Insights: Contributors to Negative Profit
 
-* **Main insight 1.** The analysis shows peak sales in summer (sandals, slippers) and winter (boots, coats), which supports a cyclical stock strategy to anticipate demand shifts.
+* **Women's Shoes** This category records the highest number of transactions with negative gross profit, totaling 148 transactions. These frequent losses suggest that products in this category may be priced below cost, necessitating a reassessment of pricing strategies.
   
-* **Main insight 2.** The seasonal pricing strategy suggests pricing adjustments, particularly in items like "18 Elly Tennis” and “19 Cheerful 01," which align well with seasonal trends but require precise pricing to avoid loss.
+* **Women's Boots** Women's Boots not only have a high frequency of transactions with negative gross profit but also show the most extreme negative profit margins (minimum of -9.87%) and an average gross profit loss of -£8.08. These trends point to significant losses, possibly due to pricing or demand factors specific to this category.
   
-* **Main insight 3.** Monthly revenue data reveal upward trends in sales volume over time, highlighting growth potential for demand forecasting.
+* **Other Categories** Men's Boots and Men's Sneakers each have one transaction showing substantial losses in both gross profit and profit margin. Although isolated, these instances may reflect critical pricing or cost management issues.
 
-[Visualization specific to category 4]
+![Description of Image](./contributors_to_negative_profit.png){: width="50%"}
 
 
 # Recommendations:
