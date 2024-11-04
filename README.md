@@ -176,6 +176,50 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
 
 <img src="./top_20_subcategories_by_revenue.png" alt="Description of Image">
 
+#### Womens Monthly Sales Trends Analysis (AW22 - SS23)
+
+##### Women's Bags:
+
+* Peak Sales: Highest in June with approximately 6 units.
+  
+* Trends: Significant drop post-July with sales near zero through winter and early spring, with minimal activity from September to April (1 or 0 units sold per month).
+  
+##### Women's Boots:
+
+* Peak Sales: October sees the highest sales with about 113 pairs.
+  
+* Trends: Sharp decline post-peak to 80 pairs in November and 63 in December, with a slight recovery to about 71 pairs in January due to sales season. Sales decrease again in February and March, bottoming out during the summer months.
+  
+##### Women's Espadrilles:
+
+* Peak Sales: June peaks with approximately 110 pairs.
+  
+* Trends: Sales increase in May (under 80 pairs), then fall in July (around 53 pairs), with zero sales from October through March.
+    
+##### Women's Sandals:
+
+* Peak Sales: Peaks in June with just under 100 pairs.
+  
+* Trends: Consistent sales in May and June (40-50 pairs) with a minor peak in August (under 60 pairs) due to sales. Sales are nearly nonexistent from October through March.
+##### Women's Shoes:
+
+* Peak Sales: High periods in April (114 pairs), May (108 pairs), and October (around 90 pairs).
+  
+* Trends: This category remains active year-round, with lowest sales from November through March (under 40 pairs each month). Sales are relatively steady in the summer (60-80 pairs per month).
+  
+##### Women's Slippers:
+
+* Peak Sales: November is the peak with just over 50 pairs.
+
+* Trends: Sharp decrease post-peak to 20 pairs in December and January, and further to 10 pairs in February, with zero sales from March through October.
+  
+##### Women's Sneakers
+
+* Peak Sales: May sees the highest sales with just over 70 pairs.
+  
+* Trends: Sales decline to 65 pairs in June and drop further to 30 pairs through the late summer and early fall, picking up slightly in March and April (30-40 pairs). December through February are the lowest months with just under 15 pairs sold each.
+
+<img src="./monthly_sales_trends_all_womens_categories.jpg" alt="Description of Image">
 
 # Recommendations:
 
