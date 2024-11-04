@@ -56,6 +56,8 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 
 * **Cost and VAT Analysis:** The average product cost price is £31, with most costs between £20-£30 for around 3,400 items, followed by £30-£40 (2,600 items) and £10-£20 (2,500 items). VAT per transaction averages £12.26, ranging from £0 (for VAT-exempt children’s items) to £63.
 
+![Description of Image](./data_distribution.png)
+
 * 
 * Most transactions involve single-unit sales, indicating a focus on lower-value, high-volume sales. The mean transaction revenue is around £76, with a standard deviation of £43.55. That means that about 68% of revenue is between £32.45 and £119.55, while around 95% of transaction revenue falls between £-11.10 and £163.10. In other words, most transactions fall within the £32.45 to £119.55 range.
 
@@ -67,17 +69,19 @@ Branch Performance: The Barnes location significantly outperforms Haslemere in r
 ![Description of Image](./branch_analysis.jpg)
   
 
+### Category 2: Profit Margin Insights Across Product Lines
 
-
-### Category 2: Pricing and Discount Strategy
-
-* **Main insight 1.** Discounts show varied effectiveness. Negative discounts (refunds or corrections) impact revenue more than volume; positive discounts yield mixed results, not consistently driving unit sales.
+* **Top-Performing Products.** The most profitable products include "Elly Tennis," "Cheerful," "Anna Femo," "Ter Linen," "Numis," "Konsa," "Birthe," and "Nebula," with profit margins ranging from 72.7% to 81.1%. These products, mainly in the women's footwear category (especially sandals and sneakers), highlight a strong market position and effective pricing strategy within this segment.
   
-* **Main insight 2.** Profit margins on discounted items like “18 Elly Tennis” and “18 Cheerful” remain high despite markdowns, underscoring strategic discounting’s role in promoting profitable sales without excessive discount reliance.
-* 
-* **Main insight 3.** High outliers in markup are found in selective products, suggesting targeted pricing for premium items, allowing a controlled profit margin even when discounts are applied.
+* **Break-Even Sales Strategy** "Caitlin 1 Leather" in Girls' Footwear is sold at cost, resulting in a 0% profit margin. This approach may reflect a strategic decision focused on market penetration or customer acquisition rather than immediate profitability.
+  
+* **Products with Negative Margins.** Some products, such as "Kayak II G2" in Men's Shoes and "Alabama Combat Boots" in Women's Boots, are sold at a loss, indicating negative profit margins. Factors like input overpricing, production inefficiencies, or competitive pricing pressures might contribute to these losses.
 
-[Visualization specific to category 2]
+* **Underperforming Product Review:** "Anastasia Suede" in Women's Shoes stands out with the lowest profit margin at -29.52%, likely due to heavy discounting or cost mismanagement. This significant loss highlights a need for a pricing or cost strategy reassessment.
+
+* **Profitability Variations Across Categories:** Both women's and men's footwear categories feature products with minimal or negative margins, indicating inconsistent profitability. This variation suggests opportunities to refine pricing and cost strategies, especially for underperforming items.
+
+![Description of Image](./top_bottom_10_products.jpg)
 
 
 ### Category 3: Inventory Optimization
