@@ -1,27 +1,56 @@
 # Project Background
-White Wolf Agencies LTD, established in 2007, is a small independent retail company focused on footwear products. It operates two physical retail stores in South-West London and Haslemere, Surrey, along with an e-commerce site. This project leverages transactional sales data from both the EPOS and e-commerce platform to extract actionable insights supporting White Wolf Agencies' commercial success.
+White Wolf Agencies LTD, established in 2007, is a small independent footwear retailer operating two physical stores and an e-commerce platform. While the company collects significant sales and product data from its EPOS and Shopify systems, this data has remained underutilized.
 
-By analyzing key metrics—such as revenue, profit margins, and units sold—this project offers targeted recommendations for optimizing stock levels, identifying profitable product lines, and refining pricing strategies to address seasonal demand variability. These insights aim to enhance White Wolf Agencies' operational efficiency by improving inventory management, minimizing stockouts, and better aligning stock levels with demand.
+This project thoroughly analyses and synthetises this data to uncover critical actionable insights that drive **sales performance**, improve **operational efficiency**, and enhance **inventory management**. By examining key metrics - **revenue**, **profit margins**, **order volume**, and **seasonal trends** - the analysis provides data-driven reccomendations to optimise businesss strategies.
 
 Insights and recommendations are provided on the following key areas:
 
-- **Sales Performance and Profitability** 
-- **Pricing and Discount Strategy** 
-- **Inventory Optimisation** 
-- **Seasonal and Demand Analysis** 
+- **Sales Trends Analysis**: Evaluating historical sales patterns, emphasizing revenue, order volume, and average order value (AOV).
+
+- **Product Level Performance**: Analyzing product lines to identify their impact on sales and returns.
+  
+- **Sales Performance and Profitability**: Highlighting top-performing and underperforming product lines.
+  
+- **Pricing and Discount Strategy**: AAssessing pricing strategies and the effects of discounting on performance.
+  
+- **Seasonal and Demand Analysis**: Identifying seasonal trends to forecast demand and inform stock planning.
 
 The SQL query used to combine the two views into a table can be found here [link].
 
 
 # Data Structure & Initial Checks
 
-The company's main database structure as seen below consists of over 80 individual tables. For the purpose of this project two views, each aggregating data from multiple tables were used. Together, these views provide a unified structure of the dataset with essential fields for transactional analysis. The total row count is 21,138 records before data cleaning (18,636 records after data cleaning). A description of each view is as follows:
+The company’s database comprises **over 80 tables**, from which two aggregated **views** were utilized for this project. These views provide a unified and streamlined dataset essential for transactional analysis. The dataset initially contained **21,138 records** and was refined to **18,636 records** after data cleaning.
 
-- **vBI_Item:** - This view consolidates data related to individual product items, pulling from various tables to provide key attributes such as SKU, style number, description, size, color, brand, main group, subgroup, season, and cost price.
-For this analysis, only the fields containing item descriptions, style numbers, sizes, and colors were used to focus on product-specific attributes needed for categorization and trend identification.
+**vBI_Item**
 
-- **vBI_SalesRecords:** - This view compiles transactional sales data, drawing from multiple tables to provide comprehensive sales details. Key fields include the sale date, main product group, subgroup, brand name, season, quantity sold, discount, VAT amount, branch name, and an indicator for online sales.
-To streamline the analysis, only fields directly relevant to transaction summaries, pricing, VAT, and branch-specific details were retained.
+This view consolidates product-specific data from multiple tables, focusing on attributes critical for categorization and trend identification. Key fields include:
+
+- **SKU**
+- **Style number**
+- **Description**
+- **Size**
+- **Color**
+- **Brand**
+- **Main group, subgroup, season, and cost price**
+
+For the analysis, emphasis was placed on **item descriptions**, **style numbers**, **sizes**, and **colors** to identify product-level performance trends effectively.
+
+**vBI_SalesRecords**  
+
+This view aggregates transactional sales data, providing comprehensive details for sales analysis. Key fields include:
+
+- **Sale date**
+- **Main product group and subgroup**
+- **Brand name**
+- **Season**
+- **Quantity sold**
+- **Discount**
+- **VAT amount**
+- **Branch name**
+- **Online sales indicator**
+
+To streamline the analysis, only fields directly relevant to **transaction summaries**, **pricing**, **VAT**, and **branch-specific performance** were retained.
 
 [Entity Relationship Diagram here]
 
@@ -31,36 +60,39 @@ To streamline the analysis, only fields directly relevant to transaction summari
 
 ### Overview of Findings
 
-Pricing and Profit Margins: Price markups are on average 1.25 times the cost, but certain high-margin items drive profitability more than others.
+The analysis highlights a **volume-driven business model**, where most transactions involve single units, with an average transaction value of **£88.15**. Revenue is primarily driven by mid-priced items (**£60–£70**) and supported by a **consistent pricing strategy**, featuring minimal discounts and an average markup of **1.25x**, resulting in steady profit margins averaging **49.4%**.
 
-Seasonal Sales Patterns: A clear trend shows demand variation across seasons, with Autumn/Winter products like boots and coats generating higher revenue.
+Women's footwear—particularly **sandals**, **sneakers**, and **boots**—stands out as the top-performing category, significantly contributing to both **revenue** and **profitability**, with some products achieving margins exceeding **72%**.
 
-Branch Performance: The Barnes location significantly outperforms Haslemere in revenue, although Haslemere achieves a higher average profit margin per sale.
+However, **challenges persist**. Specific product lines, such as **Women's Boots and Shoes**, show **negative margins** caused by excessive discounting and cost inefficiencies, with over **6,600 transactions** averaging discounts of **-£34.59**.
+
+Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concentrated in specific months and significant declines during off-seasons, particularly for seasonal categories like boots and sandals.
+
 
 [Visualization, including a graph of overall trends or snapshot of a dashboard]
 
 
 
 # Insights Deep Dive
-### Detailed Sales Metrics and Profitability Analysis
+### Sales Metrics and Profitability Analysis
 
-* **Transaction Volume and Unit Sales:**	The majority of sales transactions involve a single unit, with occasional sales involving 2 or 3 units. This suggests a high frequency of individual purchases.
+* **Transaction Volume and Unit Sales:**	The majority of transactions involve a single unit-purchases, with occasional sales involving 2 or 3 units. This suggests a high frequency of individual purchases.
   
-* **Transaction Value and Revenue Distribution:** The average transaction value is £88.15, ranging from £18 to £379. Most transactions fall within the £60-£70 range for nearly 4,000 items, followed by £40-£50 for 2,500 items, and £70-£80 for over 2,000 items. This distribution shows that revenue is driven by a high volume of lower-value transactions, supporting a volume-driven business model.
+* **Transaction Value and Revenue Distribution:** The average transaction value is **£88.15**, ranging from **£18** to **£379**. Most transactions fall within the **£60-£70** range for nearly **4,000 items**, followed by **£40-£50** for **2,500 items**, and **£70-£80** for over **2,000 items**. This distribution shows that revenue is driven by a high volume of lower-value transactions, supporting a **volume-driven business model**.
 
-* **Discounting and Pricing Strategy:** The average product discount during sales is £12.26, with most products sold at full price. This selective discounting approach suggests a minimal reliance on discounting for sales. The average markup on products is 1.25 times the cost, indicating a pricing strategy that targets a 25% profit above cost.
+* **Discounting and Pricing Strategy:** The average discount is **£12.26**, with most products sold at full price, highlighting **minimal reliance on discounting**. An average markup of **1.25x** the cost aligns with a consistent pricing strategy, targeting a **25% profit above cost**.
 
-* **Profitability and Gross Profit Analysis:** The mean gross profit per transaction is £32.90, with most transactions generating a gross profit of £40 (3,700 transactions) or £50 (3,400 transactions). Profit margins range from -9.87% to 86.60%, averaging 49.4%, showing variability in profitability and some unprofitable sales.
+* **Profitability and Gross Profit Analysis:** TThe mean gross profit per transaction is **£32.90**, with most transactions yielding **£40–£50** in profit. Profit margins average **49.4%** but show variability, ranging from **-9.87%** to **86.6%**, reflecting both opportunities and risks in product performance.
 
-* **Profit Margin and Markup Distribution:** Profit margins are mostly within the 40%-60% range, with a skew towards higher margins, indicating a sound pricing strategy that ensures profitability across a diverse range of products. Most products have a markup below 2, with an average markup of 124%. The markup distribution is concentrated in the 140%-150% range for about 5,000 transactions and the 120%-130% range for nearly 4,000 transactions, indicating a consistent yet strategic approach to maximizing profitability.
+* **Profit Margin and Markup Distribution:** Profit margins predominantly fall within the **£40%-60% range**, skewed toward higher margins, indicating a strong pricing strategy. Markup distribution is concentrated in the **140%-150% range (5,000 transactions)** and **120%-130% range (4,000 transactions)**, showcasing a consistent approach to profitability.
 
-* **Cost and VAT Analysis:** The average product cost price is £31, with most costs between £20-£30 for around 3,400 items, followed by £30-£40 (2,600 items) and £10-£20 (2,500 items). VAT per transaction averages £12.26, ranging from £0 (for VAT-exempt children’s items) to £63.
+* **Cost and VAT Analysis:** The average product cost price is **£31**, with most costs between **£20-£30** for around **3,400 items**, followed by **£30-£40 (2,600 items)** and **£10-£20 (2,500 items)**. VAT per transaction averages **£12.26**, ranging from **£0 (for VAT-exempt children’s items)** to **£63**.
 
 ![Description of Image](./data_distribution.png)
 
 ### Profit Margin Insights Across Product Lines
 
-* **Top-Performing Products.** The most profitable products include "Elly Tennis," "Cheerful," "Anna Femo," "Ter Linen," "Numis," "Konsa," "Birthe," and "Nebula," with profit margins ranging from 72.7% to 81.1%. These products, mainly in the women's footwear category (especially sandals and sneakers), highlight a strong market position and effective pricing strategy within this segment.
+* **Top-Performing Products.** Products like **"Elly Tennis," "Cheerful," "Anna Femo," "Ter Linen," "Numis," "Konsa," "Birthe," and "Nebula"** shine as top performers, boasting impressive profit margins between **72.7%** and **81.1%**. Dominating the **women's footwear segment**—especially in **sandals and sneakers**—these items underscore the brand’s stronghold in this category. Their success highlights a keen understanding of customer demand paired with an effective pricing strategy that maximizes value.
   
 * **Break-Even Sales Strategy** "Caitlin 1 Leather" in Girls' Footwear is sold at cost, resulting in a 0% profit margin. This approach may reflect a strategic decision focused on market penetration or customer acquisition rather than immediate profitability.
   
