@@ -88,7 +88,7 @@ Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concen
 
 * **Cost and VAT Analysis:** The average product cost price is **£31**, with most costs between **£20-£30** for around **3,400 items**, followed by **£30-£40 (2,600 items)** and **£10-£20 (2,500 items)**. VAT per transaction averages **£12.26**, ranging from **£0 (for VAT-exempt children’s items)** to **£63**.
 
-![Description of Image](./data_distribution.png)
+![Description of Image](./graphs/data_distribution.png)
 
 ### Profit Margin Insights Across Product Lines
 
@@ -102,7 +102,7 @@ Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concen
 
 * **Profitability Variations Across Categories:** Both women's and men's footwear categories feature products with minimal or negative margins, indicating inconsistent profitability. This variation suggests opportunities to refine pricing and cost strategies, especially for underperforming items.
 
-![Description of Image](./top_bottom_10_products.jpg)
+![Description of Image](./graphs/top_bottom_10_products.jpg)
 
 
 ### Profitability Challenges and Strategic Insights
@@ -113,7 +113,7 @@ Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concen
   
 * **Negative Profit Margins** Profit margins average **-0.25%**, which, although it may appear minor, could have significant impacts depending on sales volume. Margins range from **-9.87%** to **0.000436%**, indicating variability in product or transaction performance. Addressing these variations can help in achieving a healthier overall profit margin.
 
-![Description of Image](./negative_values.jpg)
+![Description of Image](./graphs/negative_values.jpg)
 
 
 ### Category-Level Insights: Contributors to Negative Profit
@@ -125,7 +125,7 @@ Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concen
 * **Other Categories** Men's Boots and Men's Sneakers each have **one transaction** showing substantial losses in both gross profit and profit margin. Although isolated, these instances may reflect critical pricing or cost management issues.
 
 <div align="center">
-    <img src="./contributors_to_negative_profit.png" alt="Description of Image" width="50%">
+    <img src="./graphs/contributors_to_negative_profit.png" alt="Description of Image" width="50%">
 </div>
 
 ### Dissecting the Dynamics of Product Underperformance
@@ -145,7 +145,7 @@ Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concen
 Sold 12 units but with a low average profit per unit, leading to a minimal overall gross profit of £26.72, which may not cover operational and inventory expenses.
 
 <div align="center">
-    <img src="./worst_performing_products.png" alt="Description of Image" width="60%">
+    <img src="./graphs/worst_performing_products.png" alt="Description of Image" width="60%">
 </div>
 
 ### Category Sales Performance Analysis
@@ -168,7 +168,7 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
 
 * **Men's Sandals, Slippers, and Unisex Kids' Footwear**: Exhibiting lower overall performance, possibly reflective of niche appeal or seasonal fluctuations in demand impacting their sales and profitability.
 
-<img src="./category_sales_performance.jpg" alt="Description of Image">
+<img src="./graphs/category_sales_performance.jpg" alt="Description of Image">
 
 ### Profit Margin Performance Breakdown
 
@@ -188,7 +188,7 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
   
 * **Boys' Footwear and Women's Slippers**: These categories show less favorable profitability, potentially due to strong competition or fluctuations in consumer spending patterns.
 
-<img src="./average_profit_margin_by_product_cateogory.png" alt="Description of Image">
+<img src="./graphs/average_profit_margin_by_product_cateogory.png" alt="Description of Image">
 
 ### Top 20 Product Subcategories by Revenue Analysis
 
@@ -206,7 +206,7 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
 
 * **Suede Ankle (LOW) (Women's Boots)**: Shows lower revenue and profit margins. Despite its lower-tier status, it maintains a reasonable profit margin, which may indicate effective cost management but potentially limited market appeal or higher production costs.
 
-<img src="./top_20_subcategories_by_revenue.png" alt="Description of Image">
+<img src="./graphs/top_20_subcategories_by_revenue.png" alt="Description of Image">
 
 #### Womens Monthly Sales Trends Analysis (AW22 - SS23)
 
@@ -251,7 +251,7 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
   
 * Trends: Sales decline to 65 pairs in June and drop further to 30 pairs through the late summer and early fall, picking up slightly in March and April (30-40 pairs). December through February are the lowest months with just under 15 pairs sold each.
 
-<img src="./monthly_sales_trends_all_womens_categories.jpg" alt="Description of Image">
+<img src="./graphs/monthly_sales_trends_all_womens_categories.jpg" alt="Description of Image">
 
 # Recommendations:
 
