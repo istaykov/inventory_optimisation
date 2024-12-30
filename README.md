@@ -18,7 +18,7 @@
    - [Cateogry Sales Performance Analysis](#category-sales-performance-analysis)
    - [Profit Margin Performance Breakdown](#profit-margin-performance-breakdown)
    - [Top 20 Product Subcategories by Revenue Analysis](#top-20-product-subcategories-by-revenue-analysis)
-   - [Womens Monthly Sales Trends Analysis (AW22-SS23)](#womens-monthly-sales-trends-analysis-)
+   - [Womens Monthly Sales Trends Analysis (AW22-SS23)](#womens-monthly-sales-trends-analysis-(AW22-SS23))
 5. [Recommendations](#recommendations)
 6. [Assumptions and Caveats](#assumptions-and-caveats)
    - [Assumptions](#assumptions)
