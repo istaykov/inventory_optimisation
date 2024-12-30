@@ -1,5 +1,34 @@
 # Optimising Inventory Management Through Data Analysis and Forecasting
 
+## Table of Content
+
+1. [Project Background](#project-background)
+2. [Executive Summary](#2.-loading-the-dataset-and-performing-basic-cleaning)
+   - [Understanding the Data](#2.1-understanding-the-data)
+   - [Duplicates](#2.2-duplicates)
+3. [Data Cleaning](#3.-data-cleaning)
+   - [Quantity Column](#3.1-quantity-column)
+   - [Main Group Column - Checks](#3.2-main-group-column---checks)
+   - [Subgroup Column](#3.3-subgroup-column)
+   - [Brand Column](#3.4-brand-column)
+   - [Season](#3.5-season)
+   - [Style Number Column](#3.6-style-number-column)
+   - [Size Column](#3.7size-column)
+   - [Colour Column](#3.8-colour-column)
+   - [Total with VAT and Sold for Price with VAT Column](#3.9-total-with-vat-and-sold-for-price-with-vat-column)
+   - [Final Checks for Total with VAT and Sold for Price with VAT Column](#3.10-final-checks-for-total-with-vat-and-sold-for-price-with-vat-column)
+   - [VAT Amount Column](#3.11-vat-amount-column)
+   - [Purchase No VAT Column](#3.12-purchase-no-vat-column)
+   - [Sold for Price with VAT Column](#3.13-sold-for-price-with-vat-column)
+   - [Sold for Price No VAT Column](#3.14-sold-for-price-no-vat-column)
+   - [Total Discount - Outlier](#3.15-total-discount---outlier)
+   - [Profit Margin Column](#3.16-profit-margin-column)
+   - [Item Description](#3.17-item-description)
+   - [Checks](#3.18-checks)
+   - [Gross Profit Column](#3.19-gross-profit-column)
+   - [Introducing Main Subcategory Column to the DataFrame](#3.20-introducing-main-subcategory-column-to-the-dataframe)
+
+
 ## Project Background
 White Wolf Agencies LTD, established in 2007, is a small independent footwear retailer operating two physical stores and an e-commerce platform. While the company collects significant sales and product data from its EPOS and Shopify systems, this data has remained underutilized.
 
