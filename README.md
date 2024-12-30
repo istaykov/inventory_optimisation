@@ -1,7 +1,7 @@
 # Project Background
 White Wolf Agencies LTD, established in 2007, is a small independent footwear retailer operating two physical stores and an e-commerce platform. While the company collects significant sales and product data from its EPOS and Shopify systems, this data has remained underutilized.
 
-This project thoroughly analyses and synthetises this data to uncover critical actionable insights that drive **sales performance**, improve **operational efficiency**, and enhance **inventory management**. By examining key metrics - **revenue**, **profit margins**, **order volume**, and **seasonal trends** - the analysis provides data-driven reccomendations to optimise businesss strategies.
+This project thoroughly analyzes and synthesizes this data to improve **sales performance**, **enhance operational efficiency**, and refine **inventory management** strategies. By focusing on key metrics—**revenue**, **profit margins**, **order volume**, and **seasonal trends**—the analysis delivers data-driven recommendations to optimize business strategies and align operations with customer demand.
 
 Insights and recommendations are provided on the following key areas:
 
@@ -15,8 +15,23 @@ Insights and recommendations are provided on the following key areas:
   
 - **Seasonal and Demand Analysis**: Identifying seasonal trends to forecast demand and inform stock planning.
 
-The SQL query used to combine the two views into a table can be found here [link].
+The insights derived from this project will serve as a foundation for the company’s future strategies, enabling White Wolf Agencies to improve both its physical and e-commerce operations while delivering an enhanced customer experience.
 
+# Executive Summary
+
+### Overview of Findings
+
+The analysis highlights a **volume-driven business model**, where most transactions involve single units, with an average transaction value of **£88.15**. Revenue is primarily driven by mid-priced items (**£60–£70**) and supported by a **consistent pricing strategy**, featuring minimal discounts and an average markup of **1.25x**, resulting in steady profit margins averaging **49.4%**.
+
+* **Top Performers:** Women's footwear—particularly **sandals**, **sneakers**, and **boots**—stands out as the top-performing category, significantly contributing to both **revenue** and **profitability**, with some products achieving margins exceeding **72%**.
+  
+* **Challenges:** Certain product lines, such as **Women’s Boots** and **Shoes**, struggle with **negative margins** due to excessive discounting and cost inefficiencies. Over **6,600 transactions** reported discounts averaging **-£34.59**, impacting overall profitability.
+  
+* **Seasonality**: Sales are highly seasonal, with Autumn/Winter collections showing significant peaks in demand. However, off-seasons see sharp declines, especially in categories like boots and sandals.
+  
+* **Branch and Channel Dynamics:** Offline sales dominate, with the Barnes branch consistently outperforming. Online sales remain underuitilised, presenting an opportunity for growth.
+  
+* **Customer Preferences:** Products priced between **£60** and **£150** dominate sales, while niche premium items contribute disproportianately to revenue but serve a smaller audience.
 
 # Data Structure & Initial Checks
 
@@ -54,22 +69,6 @@ To streamline the analysis, only fields directly relevant to **transaction summa
 
 [Entity Relationship Diagram here]
 
-
-
-# Executive Summary
-
-### Overview of Findings
-
-The analysis highlights a **volume-driven business model**, where most transactions involve single units, with an average transaction value of **£88.15**. Revenue is primarily driven by mid-priced items (**£60–£70**) and supported by a **consistent pricing strategy**, featuring minimal discounts and an average markup of **1.25x**, resulting in steady profit margins averaging **49.4%**.
-
-Women's footwear—particularly **sandals**, **sneakers**, and **boots**—stands out as the top-performing category, significantly contributing to both **revenue** and **profitability**, with some products achieving margins exceeding **72%**.
-
-However, **challenges persist**. Specific product lines, such as **Women's Boots and Shoes**, show **negative margins** caused by excessive discounting and cost inefficiencies, with over **6,600 transactions** averaging discounts of **-£34.59**.
-
-Additionally, **seasonal trends** reveal vulnerabilities, with peak sales concentrated in specific months and significant declines during off-seasons, particularly for seasonal categories like boots and sandals.
-
-
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
 
 
 
