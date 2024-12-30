@@ -3,30 +3,26 @@
 ## Table of Content
 
 1. [Project Background](#project-background)
-2. [Executive Summary](#2.-loading-the-dataset-and-performing-basic-cleaning)
-   - [Understanding the Data](#2.1-understanding-the-data)
-   - [Duplicates](#2.2-duplicates)
-3. [Data Cleaning](#3.-data-cleaning)
-   - [Quantity Column](#3.1-quantity-column)
-   - [Main Group Column - Checks](#3.2-main-group-column---checks)
-   - [Subgroup Column](#3.3-subgroup-column)
-   - [Brand Column](#3.4-brand-column)
-   - [Season](#3.5-season)
-   - [Style Number Column](#3.6-style-number-column)
-   - [Size Column](#3.7size-column)
-   - [Colour Column](#3.8-colour-column)
-   - [Total with VAT and Sold for Price with VAT Column](#3.9-total-with-vat-and-sold-for-price-with-vat-column)
-   - [Final Checks for Total with VAT and Sold for Price with VAT Column](#3.10-final-checks-for-total-with-vat-and-sold-for-price-with-vat-column)
-   - [VAT Amount Column](#3.11-vat-amount-column)
-   - [Purchase No VAT Column](#3.12-purchase-no-vat-column)
-   - [Sold for Price with VAT Column](#3.13-sold-for-price-with-vat-column)
-   - [Sold for Price No VAT Column](#3.14-sold-for-price-no-vat-column)
-   - [Total Discount - Outlier](#3.15-total-discount---outlier)
-   - [Profit Margin Column](#3.16-profit-margin-column)
-   - [Item Description](#3.17-item-description)
-   - [Checks](#3.18-checks)
-   - [Gross Profit Column](#3.19-gross-profit-column)
-   - [Introducing Main Subcategory Column to the DataFrame](#3.20-introducing-main-subcategory-column-to-the-dataframe)
+2. [Executive Summary](#executive-summary)
+3. [Data Sources and Methodology](#data-sources-and-methodology)
+   - [Data Sources](#data-sources)
+   - [Limitations](#limitations)
+   - [Key Columns in the Dataset](#key-columns-in-the-dataset)
+   - [Methodology](#methodology)
+4. [Insights Deep Dive](#insights-deep-dive)
+   - [Sales Metrics and Profitability Analysis](#sales-metrics-and-profitability-analysis)
+   - [Profit Margin Insights Across Product Lines](#profit-margin-insights-across-product-lines)
+   - [Profitability Challenges and Strategic Insights](#profitability-challenges-and-strategic-insights)
+   - [Category-Level Insights: Contributors to Negative Profit](#category-level-insights-contributors-to-negative-profit)
+   - [Dissecting the Dynamics of Product Underperformance](#dissecting-the-dynamics-of-product-underperformance)
+   - [Cateogry Sales Performance Analysis](#category-sales-performance-analysis)
+   - [Profit Margin Performance Breakdown](#profit-margin-performance-breakdown)
+   - [Top 20 Product Subcategories by Revenue Analysis](#top-20-product-subcategories-by-revenue-analysis)
+   - [Womens Monthly Sales Trends Analysis (AW22-SS23)](#womens-monthly-sales-trends-analysis-)
+5. [Recommendations](#recommendations)
+6. [Assumptions and Caveats](#assumptions-and-caveats)
+   - [Assumptions](#assumptions)
+   - [Caveats](#caveats)
 
 
 ## Project Background
@@ -320,7 +316,7 @@ Sold 12 units but with a low average profit per unit, leading to a minimal overa
 
 <img src="./graphs/monthly_sales_trends_all_womens_categories.jpg" alt="Description of Image">
 
-# Recommendations:
+# Recommendations
 
 Based on the insights and findings above, we would recommend the stakeholder to consider the following: 
 
@@ -343,7 +339,7 @@ Explore customer segmentation to create tailored promotions based on purchase be
   
 
 
-# Assumptions and Caveats:
+# Assumptions and Caveats
 
 ## Assumptions
 
