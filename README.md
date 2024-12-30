@@ -11,7 +11,7 @@ Insights and recommendations are provided on the following key areas:
   
 - **Sales Performance and Profitability**: Highlighting top-performing and underperforming product lines.
   
-- **Pricing and Discount Strategy**: AAssessing pricing strategies and the effects of discounting on performance.
+- **Pricing and Discount Strategy**: Assessing pricing strategies and the effects of discounting on performance.
   
 - **Seasonal and Demand Analysis**: Identifying seasonal trends to forecast demand and inform stock planning.
 
