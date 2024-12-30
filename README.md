@@ -1,4 +1,6 @@
-# Project Background
+# Optimising Inventory Management Through Data Analysis and Forecasting
+
+## Project Background
 White Wolf Agencies LTD, established in 2007, is a small independent footwear retailer operating two physical stores and an e-commerce platform. While the company collects significant sales and product data from its EPOS and Shopify systems, this data has remained underutilized.
 
 This project thoroughly analyzes and synthesizes this data to improve **sales performance**, **enhance operational efficiency**, and refine **inventory management** strategies. By focusing on key metrics—**revenue**, **profit margins**, **order volume**, and **seasonal trends**—the analysis delivers data-driven recommendations to optimize business strategies and align operations with customer demand.
@@ -17,7 +19,7 @@ Insights and recommendations are provided on the following key areas:
 
 The insights derived from this project will serve as a foundation for the company’s future strategies, enabling White Wolf Agencies to improve both its physical and e-commerce operations while delivering an enhanced customer experience.
 
-# Executive Summary
+## Executive Summary
 
 ### Overview of Findings
 
@@ -33,43 +35,80 @@ The analysis highlights a **volume-driven business model**, where most transacti
   
 * **Customer Preferences:** Products priced between **£60** and **£150** dominate sales, while niche premium items contribute disproportianately to revenue but serve a smaller audience.
 
-# Data Structure & Initial Checks
+## Data Sources and Methodology
+
+### Data Sources
+
+The data utilized for this project spans sales transactions from 2017 to 2024, extracted from the company’s sales records. The dataset includes information across multiple dimensions:
+  
+* **Scope**: Transactions across two branches (Barnes and Haslemere) and online sales channels.
+  
+* **Granularity**: Detailed attributes such as product category, subcategory, pricing, discounts, revenue, cost, and profit margins.
 
 The company’s database comprises **over 80 tables**, from which two aggregated **views** were utilized for this project. These views provide a unified and streamlined dataset essential for transactional analysis. The dataset initially contained **21,138 records** and was refined to **18,636 records** after data cleaning.
 
-**vBI_Item**
-
-This view consolidates product-specific data from multiple tables, focusing on attributes critical for categorization and trend identification. Key fields include:
-
-- **SKU**
-- **Style number**
-- **Description**
-- **Size**
-- **Color**
-- **Brand**
-- **Main group, subgroup, season, and cost price**
-
-For the analysis, emphasis was placed on **item descriptions**, **style numbers**, **sizes**, and **colors** to identify product-level performance trends effectively.
-
-**vBI_SalesRecords**  
-
-This view aggregates transactional sales data, providing comprehensive details for sales analysis. Key fields include:
-
-- **Sale date**
-- **Main product group and subgroup**
-- **Brand name**
-- **Season**
-- **Quantity sold**
-- **Discount**
-- **VAT amount**
-- **Branch name**
-- **Online sales indicator**
-
-To streamline the analysis, only fields directly relevant to **transaction summaries**, **pricing**, **VAT**, and **branch-specific performance** were retained.
-
-[Entity Relationship Diagram here]
+The dataset was derived from two aggregated views within the company’s database:
+* **vBI_Item**: Provided product-specific attributes (e.g., SKU, style, size, color, brand, and cost price) essential for trend and category analysis.
+  
+* **vBI_SalesRecords**: Consolidated transactional data (e.g., sale date, discount, VAT, branch name, and online sales indicator) critical for sales performance evaluation.
 
 
+### Limitations
+
+While the dataset provides a comprehensive view of sales transactions, several limitations were encountered:
+
+1. **Data Gaps**: Missing values in categorical columns like product descriptions, brand names, and subcategories.
+2. **Outliers**: Extreme values in discounts and profit margins, potentially skewing certain analyses.
+3. **Seasonal Bias**: Some periods, particularly newer seasons like Spring/Summer 2024, lacked sufficient data for complete trend analysis.
+4. **Limited Channel Data**: Online sales were underrepresented compared to offline channels, limiting the insights into e-commerce performance.
+
+### Key Columns in the Dataset
+
+| **Column Name**             | **Description**                                                                 | **Relevance**                                                                                               |
+|-----------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| `Transaction Date`          | The date and time of the transaction.                                           | Essential for analyzing time-based trends, seasonality, and forecasting.                                  |
+| `Branch Name`               | The branch where the transaction occurred.                                      | Key for comparing branch performance and regional sales trends.                                           |
+| `Online Sale`               | Boolean indicator of whether the transaction was online or offline.             | Critical for understanding channel performance and identifying growth opportunities in e-commerce.         |
+| `Product Description`       | The name or detailed description of the product sold.                           | Useful for identifying high-performing and underperforming products.                                      |
+| `Product Category`          | The broad category of the product (e.g., Women's Shoes, Men's Shoes).           | Vital for analyzing overall sales trends and category-level performance.                                  |
+| `Product Subcategory`       | The specific subcategory of the product (e.g., Pumps, Trainers, Boots).         | Helps in pinpointing demand for specific types of products within a category.                             |
+| `Brand Name`                | The brand associated with the product.                                          | Relevant for evaluating brand-level performance and customer preferences.                                 |
+| `Season Collection`         | The seasonal collection of the product (e.g., Autumn/Winter 2022).              | Crucial for identifying seasonal trends and aligning inventory with demand.                               |
+| `Product Size`              | The size of the product sold.                                                   | Important for inventory management and ensuring availability of popular sizes.                            |
+| `Product Color`             | The color of the product sold.                                                  | Assists in understanding customer preferences and popular variations.                                     |
+| `Original Price (incl. VAT)`| The retail price of the product including VAT.                                   | Key for analyzing pricing strategies and revenue generation.                                              |
+| `Discount`                  | The discount applied to the product.                                            | Essential for evaluating the impact of discounting on sales and profitability.                            |
+| `Revenue (incl. VAT)`       | Total revenue generated from the transaction, including VAT.                    | Central metric for assessing overall business performance.                                                |
+| `Revenue (excl. VAT)`       | Revenue excluding VAT.                                                          | Allows for accurate profitability calculations and financial analysis.                                     |
+| `Cost Price (excl. VAT)`    | The cost incurred to sell the product, excluding VAT.                           | Integral for calculating gross profit and profit margins.                                                 |
+| `Gross Profit`              | Revenue minus cost price.                                                       | Key profitability metric to evaluate financial performance.                                               |
+| `Profit Margin (%)`         | Gross profit as a percentage of revenue.                                        | Measures the efficiency of pricing strategies and overall profitability.                                  |
+| `Markup`                    | Percentage increase of the price over cost price.                               | Helps in assessing pricing efficiency and competitive positioning.                                         |
+| `Units Sold`                | The quantity of units sold in the transaction.                                  | Fundamental for understanding sales volume and demand trends.                                             |
+
+
+### Methodology
+
+Methodology
+
+The analysis was conducted in three distinct phases:
+
+1. **Data Cleaning:**
+* Addressed missing values and duplicates.
+* Corrected column headers and standardized data types.
+* Handled outliers in discounts and profit margins.
+* Removed rows with inconsistent or incomplete transactional data.
+
+2. **Exploratory Data Analysis (EDA):**
+* Performed descriptive statistics to summarize data trends.
+* Analyzed the frequency distribution of categories and subcategories.
+* Visualized distributions of numerical columns using histograms and box plots.
+* Identified patterns in seasonal and branch-specific performance.
+
+3. **Trend Analysis and Visualization:**
+* Focused on key timeframes, particularly September 2022 to September 2023, to capture seasonal trends.
+* Created visualizations such as line charts, heatmaps, and stacked bar plots to represent trends in sales and category performance.
+* Analyzed profitability by subcategory and seasonal collections to inform pricing strategies.
 
 
 # Insights Deep Dive
@@ -277,10 +316,43 @@ Explore customer segmentation to create tailored promotions based on purchase be
 
 # Assumptions and Caveats:
 
+## Assumptions
+
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+
+1. **Data Accuracy:**
+* It is assumed that the provided dataset is an accurate and complete representation of sales transactions from 2017 to 2024.
+* Corrections made during data cleaning have not altered the fundamental integrity of the dataset.
+
+2. **Seasonality:**
+* The observed sales trends are assumed to be reflective of true seasonal patterns rather than anomalies or external factors like promotional events.
+
+3. **Customer Behavior Consistency:**
+* Customer preferences, such as the popularity of specific categories or product attributes, are assumed to remain consistent over similar seasonal periods.
+
+4. **Profitability Metrics:**
+* Calculations of gross profit, profit margin, and markup rely on the accuracy of the cost price and revenue data provided.
+
+5. **Branch and Channel Dynamics:**
+* Performance differences between branches and sales channels are assumed to reflect actual market conditions rather than operational inefficiencies or reporting errors.
 
 * Assumption 1: Seasonal data gaps: December 2021 data was partially imputed using December 2020 trends.
   
 * Assumption 2: Negative discount interpretation: High negative discounts were assumed to represent clearance markdowns.
   
 * Assumption 3: Exclusion of non-sensical refund dates: Refunds with incorrect dates were excluded from the analysis, totaling about 3% of the data.
+
+## Caveats
+
+1. **Data Gaps and Missing Values:** Several columns contained missing or incomplete information, such as product descriptions and subcategories, which may have influenced the depth of analysis.
+
+2. **Outliers:** Extreme values in discounts and profit margins were addressed, but their impact on aggregate trends may not have been entirely mitigated.
+
+3. **Limited Online Sales Data:** Online sales were underrepresented compared to offline sales, limiting the ability to generalize insights for e-commerce strategies.
+
+4. **External Influences:** The analysis does not account for external factors such as economic conditions, competitive dynamics, or changes in consumer behavior that may have impacted sales trends.
+
+5. **Forecasting Precision:** While preliminary demand forecasting provides useful insights, it is based solely on historical data. Future trends may deviate due to unforeseen factors.
+
+6. **Data Timeframe:** The analysis primarily focused on September 2022 to September 2023 for trend insights. Findings may not fully apply to periods with insufficient data, such as Spring/Summer 2024.
+
