@@ -114,8 +114,6 @@ While the dataset provides a comprehensive view of sales transactions, several l
 
 ### Methodology
 
-Methodology
-
 The analysis was conducted in three distinct phases:
 
 1. **Data Cleaning:**
@@ -387,11 +385,14 @@ Throughout the analysis, multiple assumptions were made to manage challenges wit
 5. **Branch and Channel Dynamics:**
 * Performance differences between branches and sales channels are assumed to reflect actual market conditions rather than operational inefficiencies or reporting errors.
 
-* Assumption 1: Seasonal data gaps: December 2021 data was partially imputed using December 2020 trends.
+6. **Seasonal data gaps:**
+* December 2021 data was partially imputed using December 2020 trends.
   
-* Assumption 2: Negative discount interpretation: High negative discounts were assumed to represent clearance markdowns.
+7. **Negative discount interpretation:**
+* High negative discounts were assumed to represent clearance markdowns.
   
-* Assumption 3: Exclusion of non-sensical refund dates: Refunds with incorrect dates were excluded from the analysis, totaling about 3% of the data.
+8. **Exclusion of non-sensical refund dates:**
+* Refunds with incorrect dates were excluded from the analysis, totaling about 3% of the data.
 
 ## Caveats
 
