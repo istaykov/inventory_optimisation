@@ -58,7 +58,7 @@ The analysis highlights a **volume-driven business model**, where most transacti
   
 * **Branch and Channel Dynamics:** Offline sales dominate, with the Barnes branch consistently outperforming. Online sales remain underuitilised, presenting an opportunity for growth.
   
-* **Customer Preferences:** Products priced between **£60** and **£150** dominate sales, while niche premium items contribute disproportianately to revenue but serve a smaller audience.
+* **Customer Preferences:** Products priced between **£60** and **£150** dominate sales, while niche premium items contribute disproportionately to revenue but serve a smaller audience.
 
 ## Data Sources and Methodology
 
