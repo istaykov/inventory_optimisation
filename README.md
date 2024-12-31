@@ -117,6 +117,7 @@ While the dataset provides a comprehensive view of sales transactions, several l
 The analysis was conducted in three distinct phases:
 
 1. **Data Cleaning:**
+* Imported data from CSV files using **Python's Pandas DataFrame**.
 * Addressed missing values and duplicates.
 * Corrected column headers and standardized data types.
 * Handled outliers in discounts and profit margins.
